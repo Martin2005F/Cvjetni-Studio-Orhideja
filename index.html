@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Studio Orhideja</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Animacije za fade-in i slide-up */
+      .animate {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+
+      .animate.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-icon"
+            ><img src="logo.jpg" alt="Studio Orhideja logo"
+          /></span>
+          <span class="logo-text">Studio Orhideja</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Početna</a></li>
+          <li><a href="#services">Usluge</a></li>
+          <li><a href="#gallery">Galerija</a></li>
+          <li><a href="#about">O nama</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main class="hero-section animate" id="home">
+      <div class="hero-content">
+        <h1 class="hero-title animate">
+          Cvjetni Studio<br />
+          <span class="hero-subtitle">Orhideja</span>
+        </h1>
+        <p class="hero-description animate">
+          Kreiramo zadivljujuće cvjetne kreacije za najvažnije životne trenutke.
+          Od intimnih okupljanja do velikih proslava.
+        </p>
+        <div class="hero-buttons animate">
+          <button class="btn btn-primary">Pogledajte naš rad</button>
+          <button class="btn btn-secondary">Kontaktirajte nas</button>
+        </div>
+      </div>
+    </main>
+
+    <section class="services-section animate" id="services">
+      <div class="container">
+        <h2 class="section-title animate">Naše usluge</h2>
+        <p class="section-description animate">
+          Specijalizirana cvjetna umjetnost za svaku priliku, izrađena s
+          ljubavlju i pažnjom.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card animate">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Vjenčani prstenovi s cvijećem"
+              />
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Vjenčanja</h3>
+              <p class="service-description">
+                Buketi, dekoracije ceremonije i središnji ukrasi za vaš poseban
+                dan.
+              </p>
+              <a href="#" class="service-link">Saznaj više →</a>
+            </div>
+          </div>
+
+          <div class="service-card animate">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Cvijeće za posebne događaje"
+              />
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Posebni događaji</h3>
+              <p class="service-description">
+                Cvjetni aranžmani za korporativne proslave, rođendane i
+                jubileje.
+              </p>
+              <a href="#" class="service-link">Saznaj više →</a>
+            </div>
+          </div>
+
+          <div class="service-card animate">
+            <div class="service-image">
+              <img src="galerija5.jpg" alt="Svježi cvjetni aranžmani" />
+            </div>
+            <div class="service-content">
+              <h3 class="service-title">Svježe cvijeće svaki dan</h3>
+              <p class="service-description">
+                Sezonski buketi, dekoracije za dom i cvjetni pokloni za svaki
+                dan.
+              </p>
+              <a href="#" class="service-link">Saznaj više →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section animate" id="gallery">
+      <div class="container">
+        <h2 class="section-title animate">Naša galerija</h2>
+        <p class="section-description animate">
+          Izložba naših najboljih cvjetnih radova, od intimnih aranžmana do
+          velikih proslava.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item animate">
+            <img
+              src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Narančasto cvijeće"
+            />
+          </div>
+          <div class="gallery-item animate">
+            <img src="galerija1.jpg" alt="cvijece" />
+          </div>
+          <div class="gallery-item animate">
+            <img
+              src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              alt="Mladoženja i mladenka"
+            />
+          </div>
+          <div class="gallery-item animate">
+            <img
+              src="https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+              alt="Zalazak sunca"
+            />
+          </div>
+          <div class="gallery-item animate">
+            <img src="galerija2.jpg" alt="cvijece" />
+          </div>
+          <div class="gallery-item animate">
+            <img src="galerija3.jpg" alt="Ruže" />
+          </div>
+          <div class="gallery-item animate">
+            <img src="galerija4.jpg" alt="cvijece" />
+          </div>
+          <div class="gallery-item animate">
+            <img src="sekcija.jpg" alt="cvijece" />
+          </div>
+          <div class="gallery-item animate">
+            <img src="galerija6.jpg" alt="cvijece" />
+          </div>
+          <div class="gallery-item animate">
+            <img src="galerija7.jpg" alt="cvijece" />
+          </div>
+          <div class="gallery-item animate">
+            <img src="galerija8.jpg" alt="cvijece" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="galleryModal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" alt="Prikaz slike" />
+      <div id="caption"></div>
+      <a class="modal-prev">&#10094;</a>
+      <a class="modal-next">&#10095;</a>
+    </div>
+
+    <section class="about-section animate" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text animate">
+            <h2 class="about-title animate">O Studiju Orhideja</h2>
+            <p class="about-description animate">
+              Već više od deset godina Studio Orhideja stvara izvanredna cvjetna
+              iskustva koja hvataju ljepotu najvažnijih trenutaka u životu. Naša
+              strast prema botaničkoj umjetnosti potiče nas da biramo najbolje
+              cvijeće i izrađujemo aranžmane koji pričaju vašu jedinstvenu
+              priču.
+            </p>
+            <p class="about-description animate">
+              Od intimnih okupljanja do velikih vjenčanja, vjerujemo da svaka
+              prilika zaslužuje dodir prirodne ljepote koju samo cvijeće može
+              pružiti. Naš tim vještih cvjećara spaja tradicionalne tehnike s
+              modernim dizajnom kako bi stvorio aranžmane koji su i bezvremenski
+              i suvremeni.
+            </p>
+
+            <div class="about-stats animate">
+              <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Vjenčanja</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Godina iskustva</span>
+              </div>
+            </div>
+
+            <button class="btn btn-about">Naša priča</button>
+          </div>
+
+          <div class="about-image animate">
+            <img
+              src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Cvjećar u radu u studiju"
+            />
+            <div class="quote-overlay">
+              <blockquote class="about-quote">
+                "Svaki cvijet ima svoju priču."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section animate" id="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info animate">
+            <h2 class="contact-title animate">Stvorimo nešto lijepo zajedno</h2>
+            <p class="contact-description animate">
+              Spremni ste ostvariti svoju viziju? Kontaktirajte nas i
+              razgovarajmo o vašim cvjetnim potrebama.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon visit-icon">
+                  <span>📍</span>
+                </div>
+                <div class="contact-text">
+                  <h4>Posjetite nas</h4>
+                  <p>Bana Josipa Jelačića 16A, Đakovo, Hrvatska</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon call-icon">
+                  <span>📞</span>
+                </div>
+                <div class="contact-text">
+                  <h4>Telefon</h4>
+                  <p>091 946 5047</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon email-icon">
+                  <span>✉️</span>
+                </div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>info@studioorhideja.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-section">
+              <h4>Pratite nas</h4>
+              <div class="social-links">
+                <a href="#" class="social-link facebook">
+                  <span>📘</span>
+                </a>
+                <a href="#" class="social-link instagram">
+                  <span>📷</span>
+                </a>
+                <a href="#" class="social-link pinterest">
+                  <span>📌</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container animate">
+            <h3 class="form-title animate">Pošaljite nam poruku</h3>
+            <form class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">Ime</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Vaše ime"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Prezime</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Vaše prezime"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="vaš@email.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="eventType">Vrsta događaja</label>
+                <select id="eventType" name="eventType" required>
+                  <option value="">Odaberite vrstu događaja</option>
+                  <option value="wedding">Vjenčanje</option>
+                  <option value="corporate">Korporativni događaj</option>
+                  <option value="birthday">Rođendan</option>
+                  <option value="anniversary">Obljetnica</option>
+                  <option value="other">Ostalo</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Poruka</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Recite nam o svojoj viziji..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit">Pošalji</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-icon">🌸</span>
+              <span class="logo-text">Studio Orhideja</span>
+            </div>
+            <p class="footer-description">
+              Stvaramo lijepe trenutke kroz umjetnost cvijeća.
+            </p>
+            <p class="footer-copyright">
+              © 2024 Cvjetni Studio Orhideja. Sva prava pridržana.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Brze poveznice</h4>
+              <ul>
+                <li><a href="#home">Početna</a></li>
+                <li><a href="#services">Usluge</a></li>
+                <li><a href="#gallery">Galerija</a></li>
+                <li><a href="#about">O nama</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Usluge</h4>
+              <ul>
+                <li><a href="#">Cvijeće za vjenčanja</a></li>
+                <li><a href="#">Dekoracije za događaje</a></li>
+                <li><a href="#">Svježi aranžmani</a></li>
+                <li><a href="#">Korporativni događaji</a></li>
+                <li><a href="#">Radionice cvjetne umjetnosti</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
